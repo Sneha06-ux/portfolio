@@ -3,48 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sneha Sharad Burgute | Data Science Portfolio</title>
+  <title>Sneha Burgute | Data Scientist & Web Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
+      background-color: #f8f9fa;
+      color: #343a40;
     }
-    .hero {
-      background: #0d6efd;
+
+    header {
+      background-color: #0d6efd;
       color: white;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    .hero img {
+
+    header img {
       width: 140px;
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
+      border: 4px solid #fff;
       margin-bottom: 20px;
     }
-    .section-title {
-      border-left: 4px solid #0d6efd;
+
+    .section {
+      padding: 40px 0;
+    }
+
+    .section h3 {
+      border-left: 5px solid #0d6efd;
       padding-left: 10px;
-      font-weight: bold;
-      margin: 40px 0 20px;
-    }
-    .card {
-      border: none;
-      border-left: 4px solid #0d6efd;
-      background-color: white;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       margin-bottom: 20px;
     }
+
+    .card-custom {
+      background-color: #ffffff;
+      padding: 20px;
+      border-left: 4px solid #0d6efd;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+
     a {
       color: #0d6efd;
+      text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       background-color: #e9ecef;
       padding: 30px;
@@ -55,98 +66,114 @@
 </head>
 <body>
 
-<!-- Hero Section -->
-<div class="hero">
+<header>
   <img src="WhatsApp Image 2025-05-06 at 7.12.54 PM.jpeg" alt="Sneha Burgute">
   <h1>Sneha Sharad Burgute</h1>
-  <p>Data Science Intern | Web App Developer | ML Enthusiast</p>
+  <p>Data Science Enthusiast | Frontend Developer | AI Intern</p>
   <p>
-    <a href="mailto:burgutesneha06@gmail.com">burgutesneha06@gmail.com</a> |
-    <a href="https://linkedin.com/in/sneha-burgute-030b09289" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/Sneha06-ux" target="_blank">GitHub</a>
+    <a href="mailto:burgutesneha06@gmail.com" class="text-white">burgutesneha06@gmail.com</a> |
+    <a href="https://linkedin.com/in/sneha-burgute-030b09289" target="_blank" class="text-white">LinkedIn</a> |
+    <a href="https://github.com/Sneha06-ux" target="_blank" class="text-white">GitHub</a>
   </p>
-  <p>Pune, India | +91 8080052869</p>
-</div>
+</header>
 
-<div class="container">
+<main class="container">
 
   <!-- Education -->
-  <h3 class="section-title">🎓 Education</h3>
-  <div class="card">
-    <p><strong>T.P.C.T. College of Engineering, Dharashiv</strong> (2022 – 2025)<br>
-    B.Tech in Computer Science & Engineering — SGPA: 8.34 (7th Sem)</p>
-    <p><strong>Government Polytechnic College, Dharashiv</strong> (2019 – 2022)<br>
-    Diploma in Computer Science & Engineering — 82.21%</p>
-  </div>
+  <section class="section" id="education">
+    <h3>🎓 Education</h3>
+    <div class="card-custom">
+      <p><strong>T.P.C.T. College of Engineering, Dharashiv</strong> (2022 – 2025)<br>
+      B.Tech in Computer Science & Engineering – SGPA: 8.34 (7th Sem)</p>
+      <p><strong>Government Polytechnic College, Dharashiv</strong> (2019 – 2022)<br>
+      Diploma in Computer Science & Engineering – 82.21%</p>
+    </div>
+  </section>
 
   <!-- Skills -->
-  <h3 class="section-title">🛠️ Technical Skills</h3>
-  <div class="card">
-    <ul>
-      <li><strong>Languages:</strong> Python, HTML, CSS, JavaScript (Familiar)</li>
-      <li><strong>Frameworks:</strong> Flask (Basic hands-on)</li>
-      <li><strong>Databases:</strong> MySQL</li>
-      <li><strong>Tools:</strong> VS Code, GitHub</li>
-      <li><strong>Core Concepts:</strong> Data Science, Machine Learning, OOP, SQL</li>
-    </ul>
-  </div>
+  <section class="section" id="skills">
+    <h3>🛠️ Technical Skills</h3>
+    <div class="card-custom">
+      <ul>
+        <li><strong>Languages:</strong> Python, JavaScript (Familiar), HTML, CSS</li>
+        <li><strong>Frameworks:</strong> Flask (Basic hands-on)</li>
+        <li><strong>Databases:</strong> MySQL</li>
+        <li><strong>Tools:</strong> VS Code, GitHub</li>
+        <li><strong>Specialization:</strong> Data Science, Machine Learning, OOP</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Projects -->
-  <h3 class="section-title">💻 Projects</h3>
-  <div class="card">
-    <h5>🏠 House Price Prediction</h5>
-    <p><strong>Live:</strong> <a href="https://sneha06.pythonanywhere.com/predict" target="_blank">sneha06.pythonanywhere.com/predict</a></p>
-    <p>Developed a full-stack Flask-based web app that predicts house prices using a trained ML regression model. Designed with a clean UI for real-time predictions based on input features.</p>
-  </div>
-  <div class="card">
-    <h5>🛒 AI Shopping Assistant</h5>
-    <p><strong>Live:</strong> <a href="https://snehab06.pythonanywhere.com/" target="_blank">snehab06.pythonanywhere.com</a></p>
-    <p>Built an AI-driven shopping assistant using Flask and NLP to provide intelligent product recommendations based on user queries. Includes natural language understanding and dynamic UI updates.</p>
-  </div>
+  <section class="section" id="projects">
+    <h3>💻 Projects</h3>
+
+    <div class="card-custom">
+      <h5>🏠 House Price Prediction</h5>
+      <p><a href="https://sneha06.pythonanywhere.com/predict" target="_blank">Live Demo</a></p>
+      <p>Full-stack Flask web app that predicts house prices using ML regression based on user inputs. Features a user-friendly interface and real-time results.</p>
+    </div>
+
+    <div class="card-custom">
+      <h5>🛒 AI Shopping Assistant</h5>
+      <p><a href="https://snehab06.pythonanywhere.com/" target="_blank">Live Demo</a></p>
+      <p>Interactive AI-powered product recommendation assistant using Flask and NLP. Handles user queries in natural language and suggests relevant items.</p>
+    </div>
+
+  </section>
 
   <!-- Experience -->
-  <h3 class="section-title">📊 Experience</h3>
-  <div class="card">
-    <h5>Intern – Foundation of Artificial Intelligence</h5>
-    <p><em>Edunet Foundation & AICTE | Remote | April–May 2025</em></p>
-    <ul>
-      <li>Learned ML concepts with Python libraries: NumPy, Pandas, Matplotlib, Scikit-learn.</li>
-      <li>Completed hands-on tasks in preprocessing, classification, and model evaluation.</li>
-      <li>Built mini-projects and earned certification upon completion.</li>
-    </ul>
-  </div>
+  <section class="section" id="experience">
+    <h3>📊 Experience</h3>
+    <div class="card-custom">
+      <h5>AI Intern – Edunet Foundation & AICTE</h5>
+      <p><em>Remote | Apr 2025 – May 2025</em></p>
+      <ul>
+        <li>Hands-on projects in ML using Python, NumPy, Pandas, and Scikit-learn.</li>
+        <li>Completed modules on data preprocessing, classification, and model evaluation.</li>
+        <li>Certified by Edunet Foundation after final assessments.</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Certifications -->
-  <h3 class="section-title">📜 Certifications</h3>
-  <div class="card">
-    <ul>
-      <li>CCNA – Cisco Certified Network Associate</li>
-      <li>Infosys Springboard Certification</li>
-    </ul>
-  </div>
+  <section class="section" id="certifications">
+    <h3>📜 Certifications</h3>
+    <div class="card-custom">
+      <ul>
+        <li>CCNA – Cisco Certified Network Associate</li>
+        <li>Infosys Springboard Certification</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Leadership -->
-  <h3 class="section-title">🤝 Leadership & Events</h3>
-  <div class="card">
-    <ul>
-      <li>Organized college fests, workshops, and coding competitions.</li>
-      <li>Led Engineer’s Day events and tech community activities.</li>
-    </ul>
-  </div>
+  <section class="section" id="leadership">
+    <h3>🤝 Leadership & Events</h3>
+    <div class="card-custom">
+      <ul>
+        <li>Led coding competitions, tech fests, and workshops.</li>
+        <li>Organized Engineer’s Day and student engagement programs.</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Interests -->
-  <h3 class="section-title">💡 Interests</h3>
-  <div class="card">
-    <p>Solving real-world challenges using machine learning and building scalable web applications (frontend + backend with SQL).</p>
-  </div>
-</div>
+  <section class="section" id="interests">
+    <h3>💡 Interests</h3>
+    <div class="card-custom">
+      <p>Applying machine learning to real-world challenges, building engaging frontend interfaces, and developing full-stack applications with SQL-backed APIs.</p>
+    </div>
+  </section>
 
-<!-- Footer -->
+</main>
+
 <footer>
-  &copy; 2025 Sneha Sharad Burgute | <a href="https://sneha06-ux.github.io/portfolio/" target="_blank">Online Portfolio</a>
+  &copy; 2025 Sneha Burgute | <a href="https://sneha06-ux.github.io/portfolio/" target="_blank">View Full Portfolio</a>
 </footer>
 
 </body>
 </html>
+
 
 
